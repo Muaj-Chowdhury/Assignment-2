@@ -1,0 +1,137 @@
+/* shared styles */
+.btn {
+   font-family: inter;
+   font-weight: 600;
+   color: white;
+   padding: 26px 50px;
+   background-color: #E95A08;
+}
+
+/* latest-deals-section */
+.deals-section-pic {
+   height: 420px;
+   display: flex;
+   text-align: center;
+   gap: 38px;
+}
+
+.picture-left {
+   width: 35%;
+   
+}
+.picture-left .left-image-1,.left-image-2{
+   margin-bottom: 20px;
+   height: calc((100% - 20px)/2);
+}
+
+.picture-left .left-image-1 {
+   background-image: url(./assets/deal-bloom.png);
+}
+
+.picture-left .left-image-2 {
+   background-image: url(./assets/deal-ana.png);
+}
+
+   .picture-left .left-image-2,
+.left-image-1 {
+
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 16px ;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.picture-right-image {
+   background-image: url(./assets/deal-zabo.png);
+   border-radius: 16px;
+   width: 65%;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.picture-right-content {
+   color: white;
+}
+
+ .offer-left {
+   color: white;
+   font-weight: 700;
+   font-size: 20px;
+   font-family: inter;
+}
+ .offer-right {
+   color: white;
+   font-weight: 700;
+   font-size: 26px;
+   font-family: inter;
+}
+.shop-now-left{
+color: white;
+   font-weight: 700;
+   font-family: inter;
+   text-decoration: underline;
+}
+ .shop-now-right{
+   font-weight: 600;
+   font-family: inter;
+   font-size: 24px;
+   text-decoration: underline;
+}
+
+
+@media screen and (max-width:1024px) {
+
+   /* plant card section */
+   .card .flower-name {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0px;
+   }
+
+   .card .flower-price {
+      font-weight: 700;
+      font-size: 1rem;
+   }
+
+   .card .btn {
+      font-size: 1rem;
+      padding: 10px;
+   }
+
+   .plants .plant-description {
+      max-width: 336px;
+   }
+
+   /* plant lover section  */
+   .badge {
+      display: none;
+   }
+
+   .plant-service {
+      flex-direction: column;
+      margin: 100px 20px 20px 20px;
+   }
+
+   .br {
+      display: none;
+   }
+
+   .plant-service-img {
+      margin-bottom: 18px;
+      height: 400px;
+   }
+
+   .plants-service-content .service-title {
+      font-size: 1.5rem;
+   }
+
+   .plants-service-content ul li {
+      font-size: 1rem;
+      line-height: 16px;
+   }
+}
