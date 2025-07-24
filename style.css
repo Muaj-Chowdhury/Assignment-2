@@ -21,15 +21,17 @@
 }
 .picture-left .left-image-1,.left-image-2{
    margin-bottom: 20px;
-   height: calc((100% - 20px)/2);
+   /* height: calc((100% - 20px)/2); */
 }
 
 .picture-left .left-image-1 {
    background-image: url(./assets/deal-bloom.png);
+   height: 200px;
 }
 
 .picture-left .left-image-2 {
    background-image: url(./assets/deal-ana.png);
+   height: 200px;
 }
 
    .picture-left .left-image-2,
@@ -134,4 +136,34 @@ color: white;
       font-size: 1rem;
       line-height: 16px;
    }
+   /* deals section */
+   .deals-section-heading{
+      margin-bottom: 50px;
+   }
+   .deals-section-description{
+      width: 330px;
+      line-height: 16px;
+   }
+   .deals-section-pic {
+      flex-direction: column;
+      height: auto;
+      gap: 0;
+   }
+   .picture-left ,.picture-right-image{
+      width: calc(100% - 30px);
+      margin: 0 auto;
+   }
+    .left-image-1,.left-image-2 {
+      height: 180px;
+   }
+   .picture-right-image{
+      height: 180px;
+   }
+   .offer-right{
+      font-size: 20px;
+   }
+   .shop-now-right{
+      font-size: 1rem;
+   }
+
 }
