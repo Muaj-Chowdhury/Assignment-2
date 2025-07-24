@@ -84,7 +84,16 @@ color: white;
    font-size: 24px;
    text-decoration: underline;
 }
-
+/* join section styles */
+.join{
+   background-image: url(./assets/news-letter-bg.png);
+}
+.join .btn{
+   padding: 8px 20px;
+   font-size: 1rem;
+   font-family: inter;
+   font-weight: 600;
+}
 
 @media screen and (max-width:1024px) {
 
@@ -157,13 +166,17 @@ color: white;
       height: 180px;
    }
    .picture-right-image{
-      height: 180px;
+      height: 200px;
    }
    .offer-right{
       font-size: 20px;
    }
    .shop-now-right{
       font-size: 1rem;
+   }
+   /* join section */
+   .join{
+      background-size: cover;
    }
 
 }
