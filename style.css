@@ -87,12 +87,22 @@ color: white;
 /* join section styles */
 .join{
    background-image: url(./assets/news-letter-bg.png);
+   background-size: cover;
 }
 .join .btn{
    padding: 8px 20px;
    font-size: 1rem;
    font-family: inter;
    font-weight: 600;
+}
+/* footer styles */
+.footer-links ul li{
+color: rgb(107, 114, 128);
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+margin-bottom: 32px;
+
 }
 
 @media screen and (max-width:1024px) {
@@ -127,14 +137,16 @@ color: white;
       flex-direction: column;
       margin: 100px 20px 20px 20px;
    }
-
+   .plants-service-content{
+      margin-top: 0;
+   }
    .br {
       display: none;
    }
 
    .plant-service-img {
       margin-bottom: 18px;
-      height: 400px;
+      
    }
 
    .plants-service-content .service-title {
@@ -146,6 +158,9 @@ color: white;
       line-height: 16px;
    }
    /* deals section */
+   .latest-deals{
+      margin-top: 40px;
+   }
    .deals-section-heading{
       margin-bottom: 50px;
    }
@@ -177,6 +192,17 @@ color: white;
    /* join section */
    .join{
       background-size: cover;
+   }
+   /* footer section */
+   .footer-items-container{
+      flex-direction: column;
+      margin-left: 24px;
+   }
+   .social-id{
+      flex-direction: row;
+   }
+   .footer-logo{
+      margin-bottom: 20px;
    }
 
 }
