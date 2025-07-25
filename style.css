@@ -14,14 +14,24 @@ img{
 }
 /* navbar styles*/
 .navbar-logo img{
-width: 63px;
-height: 38px;
+width: 135px;
+height: 82px;
 }
 /* plant lover section */
 .badge{
    width: 286px;
    height: 286px;
+   animation: rotation 5s linear infinite ;
 }
+    @keyframes rotation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) ;
+      }
+    }
+
 /* latest-deals-section */
 .deals-section-pic {
    height: 420px;
@@ -142,6 +152,11 @@ height: 38px;
 
 @media screen and (max-width:1024px) {
 
+/* navbar section */
+.navbar-logo img{
+width: 63px;
+height: 38px;
+}
    /* plant card section */
    .card .flower-name {
       font-weight: 600;
