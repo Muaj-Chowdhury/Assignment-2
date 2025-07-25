@@ -1,3 +1,6 @@
+*{
+   box-sizing: border-box;
+}
 /* shared styles */
 .btn {
    font-family: inter;
