@@ -6,7 +6,19 @@
    padding: 26px 50px;
    background-color: #E95A08;
 }
-
+img{
+   width: 100%;
+}
+/* navbar styles*/
+.navbar-logo img{
+width: 63px;
+height: 38px;
+}
+/* plant lover section */
+.badge{
+   width: 286px;
+   height: 286px;
+}
 /* latest-deals-section */
 .deals-section-pic {
    height: 420px;
@@ -17,37 +29,42 @@
 
 .picture-left {
    width: 35%;
-   
-}
-.picture-left .left-image-1,.left-image-2{
-   margin-bottom: 20px;
-   /* height: calc((100% - 20px)/2); */
+
 }
 
+.picture-left .left-image-1,
+.left-image-2 {
+   margin-bottom: 20px;
+   /* filter: grayscale(50%); */
+   /* height: calc((100% - 20px)/2); */
+
+}
+
+
 .picture-left .left-image-1 {
-   background-image: url(./assets/deal-bloom.png);
+
+   background-image: linear-gradient(to right, rgba(97, 93, 93, 0.356)), url(./assets/deal-bloom.png);
    height: 200px;
 }
 
 .picture-left .left-image-2 {
-   background-image: url(./assets/deal-ana.png);
+   background-image: linear-gradient(to right, rgba(97, 93, 93, 0.356)), url(./assets/deal-ana.png);
    height: 200px;
 }
 
-   .picture-left .left-image-2,
+.picture-left .left-image-2,
 .left-image-1 {
 
    background-repeat: no-repeat;
    background-size: cover;
-   border-radius: 16px ;
-   
+   border-radius: 16px;
    display: flex;
    justify-content: center;
    align-items: center;
 }
 
 .picture-right-image {
-   background-image: url(./assets/deal-zabo.png);
+   background-image: linear-gradient(to right, rgba(97, 93, 93, 0.356)), url(./assets/deal-zabo.png);
    border-radius: 16px;
    width: 65%;
    background-repeat: no-repeat;
@@ -60,49 +77,64 @@
    color: white;
 }
 
- .offer-left {
+.offer-left {
    color: white;
    font-weight: 700;
    font-size: 20px;
    font-family: inter;
 }
- .offer-right {
+
+.offer-right {
    color: white;
    font-weight: 700;
    font-size: 26px;
    font-family: inter;
 }
-.shop-now-left{
-color: white;
+
+.shop-now-left {
+   color: white;
    font-weight: 700;
    font-family: inter;
    text-decoration: underline;
 }
- .shop-now-right{
+
+.shop-now-right {
    font-weight: 600;
    font-family: inter;
    font-size: 24px;
    text-decoration: underline;
 }
+
+
 /* join section styles */
-.join{
+.join {
    background-image: url(./assets/news-letter-bg.png);
    background-size: cover;
 }
-.join .btn{
+
+.join .btn {
    padding: 8px 20px;
    font-size: 1rem;
    font-family: inter;
    font-weight: 600;
 }
-/* footer styles */
-.footer-links ul li{
-color: rgb(107, 114, 128);
-font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-margin-bottom: 32px;
 
+/* footer styles */
+.footer-links ul li {
+   color: rgb(107, 114, 128);
+   font-family: Inter;
+   font-size: 16px;
+   font-weight: 400;
+   margin-bottom: 32px;
+
+}
+.footer-logo img{
+   width: 135px;
+   height: 82px;
+}
+.social-id img{
+   width: 36px;
+   height: 36px;
 }
 
 @media screen and (max-width:1024px) {
@@ -137,16 +169,18 @@ margin-bottom: 32px;
       flex-direction: column;
       margin: 100px 20px 20px 20px;
    }
-   .plants-service-content{
+
+   .plants-service-content {
       margin-top: 0;
    }
+
    .br {
       display: none;
    }
 
    .plant-service-img {
       margin-bottom: 18px;
-      
+
    }
 
    .plants-service-content .service-title {
@@ -157,51 +191,70 @@ margin-bottom: 32px;
       font-size: 1rem;
       line-height: 16px;
    }
+
    /* deals section */
-   .latest-deals{
+   .latest-deals {
       margin-top: 40px;
    }
-   .deals-section-heading{
+
+   .deals-section-heading {
       margin-bottom: 50px;
    }
-   .deals-section-description{
+
+   .deals-section-description {
       width: 330px;
       line-height: 16px;
    }
+
    .deals-section-pic {
       flex-direction: column;
       height: auto;
       gap: 0;
    }
-   .picture-left ,.picture-right-image{
+
+   .picture-left,
+   .picture-right-image {
       width: calc(100% - 30px);
       margin: 0 auto;
    }
-    .left-image-1,.left-image-2 {
+
+   .left-image-1,
+   .left-image-2 {
       height: 180px;
    }
-   .picture-right-image{
+
+   .picture-right-image {
       height: 200px;
    }
-   .offer-right{
+
+   .offer-right {
       font-size: 20px;
    }
-   .shop-now-right{
+
+   .shop-now-right {
       font-size: 1rem;
    }
+
    /* join section */
-   .join{
+   .join {
       background-size: cover;
    }
+
    /* footer section */
-   .footer-items-container{
+   .footer-items-container {
       flex-direction: column;
       margin-left: 24px;
    }
-   .social-id{
+
+   .social-id {
       flex-direction: row;
    }
-   .footer-logo{
+   .social-id img{
+   width: 24px;
+   height: 24px;
+}
+
+   .footer-logo {
       margin-bottom: 20px;
    }
 
